@@ -11,7 +11,8 @@ sharedMappings.register(
 module.exports = {
   output: {
     uniqueName: "userApp",
-    publicPath: "auto"
+    publicPath: "auto",
+    scriptType: "text/javascript"
   },
   optimization: {
     runtimeChunk: false
@@ -26,13 +27,13 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-        library: { type: "module" },
+        //library: { type: "module" },
 
         // For remotes (please adjust)
         name: "userApp",
         filename: "remoteEntry.js",
         exposes: {
-            './Component': './projects/user-app/src/app/user/user.component.ts',
+            './UserComponent': './projects/user-app/src/app/user/user.component.ts',
         },
 
         // For hosts (please adjust)
