@@ -35,13 +35,18 @@ This micro front end application is mono workspace based.
 
 # Steps to create and configure the mono workspace front end applicaiton.
 1. Create mono-workspace
-    ng new micro-frontend-mono-repo --no-create-application
+    * ng new micro-frontend-mono-repo --no-create-application
 2. Create host and user application inside workspace
-    ng g application host-app --routing --style=scss
-    ng g application user-app --routing --style=scss
+    * ng g application host-app --routing --style=scss
+    * ng g application user-app --routing --style=scss
 3. Install webpack and webpack-cli
-    npm i webpack webpack-cli --save-dev
+    * npm i webpack webpack-cli --save-dev
 4. Add module-federation for host-app
-    ng add @angular-architects/module-federation --project host-app --port 4200
+    * ng add @angular-architects/module-federation --project host-app --port 4200
 5. Add module-federation for user-app
-    ng add @angular-architects/module-federation --project user-app --port 4300 
+    * ng add @angular-architects/module-federation --project user-app --port 4300 
+6. Create component in user-app
+7. Configure user-app's webpack.config.js
+8. Configure host-app's webpack.config.js
+9. In host-app add the routes
+10. add src/decl.d.ts and declare module to let the typescript know it loads dynamically so it don't throw error
