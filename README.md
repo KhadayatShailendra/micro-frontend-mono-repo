@@ -1,7 +1,7 @@
-# Micro front end using mono repo
+# Micro front end using mono repo architecture
 This micro front end application is mono workspace based. 
 
-#Benefits of Using a Monorepo for Microfrontends
+# Benefits of Using a Monorepo for Microfrontends
 1. Centralized Management:
     * Unified Codebase: All microfrontend applications and shared libraries are in a single repository, making it easier to manage and coordinate changes.
     * Single Source of Truth: Consistency in dependency versions, build configurations, and tooling.
