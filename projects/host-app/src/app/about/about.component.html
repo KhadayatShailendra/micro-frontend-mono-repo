@@ -1,1 +1,100 @@
-<p>about works!</p>
+<!-- About Page Container -->
+<section class="about">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>
+        Welcome to our application! We are committed to providing the best services and solutions to our users. Our team is dedicated to innovation, excellence, and customer satisfaction.
+      </p>
+      
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is to deliver high-quality products and services that exceed our customers' expectations. We strive to innovate and continuously improve to meet the ever-evolving needs of our users.
+      </p>
+      
+      <h2>Our Team</h2>
+      <div class="team">
+        <div class="team-member">
+          <img src="/assets/team/member1.jpg" alt="Team Member 1" class="team-photo">
+          <h3>John Doe</h3>
+          <p>CEO & Founder</p>
+          <p>John is passionate about technology and leads the team with a vision to create impactful solutions.</p>
+        </div>
+        <div class="team-member">
+          <img src="/assets/team/member2.jpg" alt="Team Member 2" class="team-photo">
+          <h3>Jane Smith</h3>
+          <p>Chief Technology Officer</p>
+          <p>Jane oversees our technology strategies and ensures that our products are cutting-edge and user-friendly.</p>
+        </div>
+        <div class="team-member">
+          <img src="/assets/team/member3.jpg" alt="Team Member 3" class="team-photo">
+          <h3>Emily Johnson</h3>
+          <p>Head of Marketing</p>
+          <p>Emily drives our marketing efforts and ensures that our message reaches and resonates with our target audience.</p>
+        </div>
+      </div>
+      
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions or would like to get in touch with us, please feel free to <a routerLink="/contact">contact us</a>. We are always happy to hear from our users and customers.
+      </p>
+    </div>
+  </section>
+  
+  <!-- About Page Styles -->
+  <style>
+    .about {
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  
+    h1, h2 {
+      color: #007bff;
+    }
+  
+    p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+  
+    .team {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  
+    .team-member {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      flex: 1;
+      min-width: 250px;
+    }
+  
+    .team-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+  
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  

@@ -45,3 +45,8 @@ This micro front end application is mono workspace based.
     * ng add @angular-architects/module-federation --project host-app --port 4200
 5. Add module-federation for user-app
     * ng add @angular-architects/module-federation --project user-app --port 4300 
+6. Create component in user-app
+7. Configure user-app's webpack.config.js
+8. Configure host-app's webpack.config.js
+9. In host-app add the routes
+10. add src/decl.d.ts and declare module to let the typescript know it loads dynamically so it don't throw error
